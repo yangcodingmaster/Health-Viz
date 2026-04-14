@@ -36,3 +36,4 @@ env/
 
 # Generated chart outputs
 *.png
+dashboard.html

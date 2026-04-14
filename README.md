@@ -4,10 +4,12 @@ Visualize your Apple Health data with Python. Drop your `export.xml` into the `d
 
 ## Features
 
-- **Sleep Duration Trend** — line chart of nightly sleep over time
-- **Resting Heart Rate Trend** — line chart of resting heart rate over time
-- **Daily Steps Bar Chart** — bar chart of step counts per day
-- **Summary Dashboard** — all four charts in a single figure
+- **Interactive dashboard** — single `dashboard.html` you open in any browser
+- **Sleep Duration** — bar + 7-day rolling average, with 7 h / 9 h guidelines
+- **Resting Heart Rate** — scatter + 7-day rolling average
+- **Daily Steps** — color-coded bars (green = goal met, red = missed), 10k goal line
+- **Key Stats panel** — 30-day summary table (averages, goal-hit counts)
+- Zoom, pan, hover tooltips, and range slider built in — no server needed
 
 ## Requirements
 
@@ -32,12 +34,10 @@ pip install -r requirements.txt
    ```bash
    python src/visualize.py
    ```
-
-Charts are saved as PNG files in the project root:
-- `sleep_trend.png`
-- `heart_rate_trend.png`
-- `steps_chart.png`
-- `dashboard.png`
+5. Open the generated file in your browser:
+   ```
+   dashboard.html
+   ```
 
 ## Project Structure
 
