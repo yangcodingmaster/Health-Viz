@@ -26,6 +26,8 @@ Place your Apple Health export.xml in the data/ folder first.
 Output: dashboard.html
 """
 
+from __future__ import annotations
+
 import sys
 from pathlib import Path
 
